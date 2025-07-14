@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "cd kulthx-control-panel && npm install && npm run build",
-    "install-deps": "cd kulthx-control-panel && npm install --force && cd ../kulthx-discord-bot && npm install --force && cd ../kulthx-backend && pip install -r requirements.txt"
+    "build": "cd kulthx-control-panel && npm install --legacy-peer-deps && npm run build",
+    "install-deps": "cd kulthx-control-panel && npm install --legacy-peer-deps && cd ../kulthx-discord-bot && npm install --legacy-peer-deps && cd ../kulthx-backend && pip install -r requirements.txt"
   },
   "dependencies": {
     "express": "^4.18.2",
