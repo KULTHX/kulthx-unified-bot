@@ -1,0 +1,23 @@
+{
+  "name": "kulthx-unified-bot",
+  "version": "1.0.0",
+  "description": "Unified KULTHX Discord Bot and Control Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd kulthx-control-panel && npm install && npm run build",
+    "install-deps": "cd kulthx-control-panel && npm install && cd ../kulthx-discord-bot && npm install && cd ../kulthx-backend && pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "path": "^0.12.7",
+    "child_process": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "KULTHX",
+  "license": "MIT"
+}
+
